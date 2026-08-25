@@ -1975,5 +1975,34 @@
   <script defer src="engine/world/72-survivor-islands.js"></script>
   <script defer src="engine/world/73-target-planes.js"></script>
   <script defer src="engine/world/99-late-boot.js"></script>
+
+  <!-- Hapihappen.com 品牌角标（免登录二开）：固定右上角，半透明小字，点击打开官网 -->
+  <style>
+    .hapihappen-brand-badge {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      z-index: 99999;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.72);
+      background: rgba(0,0,0,.28);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 5px 11px;
+      text-decoration: none;
+      line-height: 1;
+      -webkit-backdrop-filter: blur(3px);
+      backdrop-filter: blur(3px);
+      transition: color .15s ease, background .15s ease;
+      user-select: none;
+    }
+    .hapihappen-brand-badge:hover { color: #fff; background: rgba(0,0,0,.45); }
+  </style>
+  <a class="hapihappen-brand-badge" id="hapihappen-brand-badge"
+     href="https://www.hapihappen.com" target="_blank" rel="noopener noreferrer"
+     aria-label="Hapihappen.com">@Hapihappen.com</a>
 </body>
 </html>
